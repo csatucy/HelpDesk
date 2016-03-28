@@ -2,5 +2,6 @@
 (Alpha version. May have errors. Please let us know if you find one)
 
 Assumptions:
-1. a functioning web server referably a LAMP setup
+1. a functioning web server preferably a LAMP setup
 2. a LDAP server to authenticate against
+3. a mail server for outgoing messages and incoming requests
