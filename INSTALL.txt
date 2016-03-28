@@ -5,3 +5,10 @@ Assumptions:
 1. a functioning web server preferably a LAMP setup
 2. a LDAP server to authenticate against
 3. a mail server for outgoing messages and incoming requests
+
+INSTALLATION
+
+1. get a copy of the HelpDesk from https://github.com/csatucy/HelpDesk
+2. put the code in your web server's tree (default directory: phphelpdesk/)
+3. create a MySQL DB (default - DB name: xxxx, DB username: helpdesk)
+
