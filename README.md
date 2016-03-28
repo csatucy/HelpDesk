@@ -5,4 +5,4 @@ Yet another web-based HelpDesk system. Our version. Made with the academic depar
 Fully developed mature application
 
 # Prerequisites
-LAMP server. Tested with PHP 5.3 and MySQL 5.5 (?)
+LAMP server. Tested with PHP 5.3 and MySQL 5.5.37
