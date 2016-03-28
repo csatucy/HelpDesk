@@ -1,4 +1,4 @@
-## Helpdesk Installation 
+# Helpdesk Installation 
 (Alpha version. May have errors. Please let us know if you find one)
 
 Assumptions:
