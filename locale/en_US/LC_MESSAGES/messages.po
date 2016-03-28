@@ -1,0 +1,781 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-07 14:38+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: aliases.php:65 edit.php:65 edit_request.php:65 friendmail.php:65
+#: index.php:65 Key.php:65 login2.php:65 login3.php:65 login_answer.php:65
+#: newfeaturess.php:65 onlysolved.php:65 problem_out.php:65 Search.php:65
+#: solved_pending.php:65 subjectview4.php:65
+msgid "University of Cyprus - Department of Computer Science"
+msgstr ""
+
+#: aliases.php:75 edit.php:75 edit_request.php:75 friendmail.php:75
+#: index.php:75 Key.php:75 login2.php:75 login3.php:75 login_answer.php:75
+#: newfeaturess.php:75 onlysolved.php:75 problem_out.php:75 Search.php:75
+#: solved_pending.php:75 subjectview4.php:75
+msgid "Home"
+msgstr ""
+
+#: aliases.php:76 edit.php:76 edit_request.php:76 friendmail.php:76
+#: index.php:76 Key.php:76 login2.php:76 login3.php:76 login_answer.php:76
+#: newfeaturess.php:76 onlysolved.php:76 problem_out.php:76 Search.php:76
+#: solved_pending.php:76 subjectview4.php:76
+msgid "Announcements"
+msgstr ""
+
+#: aliases.php:77 edit.php:77 edit_request.php:77 friendmail.php:77
+#: index.php:77 Key.php:77 login2.php:77 login3.php:77 login_answer.php:77
+#: newfeaturess.php:77 onlysolved.php:77 problem_out.php:77 Search.php:77
+#: solved_pending.php:77 subjectview4.php:77
+msgid "User Guides"
+msgstr ""
+
+#: aliases.php:79 edit.php:79 edit_request.php:79 friendmail.php:79
+#: index.php:79 Key.php:79 login2.php:79 login3.php:79 login_answer.php:79
+#: newfeaturess.php:79 onlysolved.php:79 problem_out.php:79 Search.php:79
+#: solved_pending.php:79 subjectview4.php:79
+msgid "VPN"
+msgstr ""
+
+#: aliases.php:80 edit.php:80 edit_request.php:80 friendmail.php:80
+#: index.php:80 Key.php:80 login2.php:80 login3.php:80 login_answer.php:80
+#: newfeaturess.php:80 onlysolved.php:80 problem_out.php:80 Search.php:80
+#: solved_pending.php:80 subjectview4.php:80
+msgid "Free NX Setup"
+msgstr ""
+
+#: aliases.php:81 edit.php:81 edit_request.php:81 friendmail.php:81
+#: index.php:81 Key.php:81 login2.php:81 login3.php:81 login_answer.php:81
+#: newfeaturess.php:81 onlysolved.php:81 problem_out.php:81 Search.php:81
+#: solved_pending.php:81 subjectview4.php:81
+msgid "Unix Lab"
+msgstr ""
+
+#: aliases.php:82 edit.php:82 edit_request.php:82 friendmail.php:82
+#: index.php:82 Key.php:82 login2.php:82 login3.php:82 login_answer.php:82
+#: newfeaturess.php:82 onlysolved.php:82 problem_out.php:82 Search.php:82
+#: solved_pending.php:82 subjectview4.php:82 subjectview4.php:661
+msgid "Email"
+msgstr ""
+
+#: aliases.php:84 edit.php:84 edit_request.php:84 friendmail.php:84
+#: index.php:84 Key.php:84 login2.php:84 login3.php:84 login_answer.php:84
+#: newfeaturess.php:84 onlysolved.php:84 problem_out.php:84 Search.php:84
+#: solved_pending.php:84 subjectview4.php:84
+msgid "Email Aliases"
+msgstr ""
+
+#: aliases.php:85 edit.php:85 edit_request.php:85 friendmail.php:85
+#: index.php:85 Key.php:85 login2.php:85 login3.php:85 login_answer.php:85
+#: newfeaturess.php:85 onlysolved.php:85 problem_out.php:85 Search.php:85
+#: solved_pending.php:85 subjectview4.php:85
+msgid "ITS WebSite"
+msgstr ""
+
+#: aliases.php:89 edit.php:89 edit_request.php:89 friendmail.php:89
+#: index.php:89 Key.php:89 login2.php:89 login3.php:89 login_answer.php:89
+#: newfeaturess.php:89 onlysolved.php:89 problem_out.php:89 Search.php:89
+#: solved_pending.php:89 subjectview4.php:89
+msgid "FAQs"
+msgstr ""
+
+#: aliases.php:90 edit.php:90 edit_request.php:90 friendmail.php:90
+#: index.php:90 Key.php:90 login2.php:90 login3.php:90 login_answer.php:90
+#: newfeaturess.php:90 onlysolved.php:90 problem_out.php:90 Search.php:90
+#: solved_pending.php:90 subjectview4.php:90
+msgid "Contact Us"
+msgstr ""
+
+#: aliases.php:106 edit.php:106 edit_request.php:106 friendmail.php:106
+#: index.php:106 Key.php:106 login2.php:106 login3.php:106
+#: login_answer.php:106 newfeaturess.php:106 onlysolved.php:106
+#: problem_out.php:106 Search.php:106 solved_pending.php:106
+#: subjectview4.php:106
+msgid "Menu:"
+msgstr ""
+
+#: aliases.php:112 edit.php:112 edit_request.php:112 friendmail.php:112
+#: index.php:112 Key.php:112 login2.php:112 login3.php:112
+#: login_answer.php:112 newfeaturess.php:112 onlysolved.php:112
+#: problem_out.php:112 problem_out.php:260 Search.php:112
+#: solved_pending.php:112 subjectview4.php:112
+msgid "Enter Request"
+msgstr ""
+
+#: aliases.php:114 edit.php:114 edit_request.php:114 friendmail.php:114
+#: index.php:114 Key.php:114 login2.php:114 login3.php:114
+#: login_answer.php:114 newfeaturess.php:114 onlysolved.php:114
+#: problem_out.php:114 Search.php:114 solved_pending.php:114
+#: subjectview4.php:114
+msgid "Requests  Answers"
+msgstr ""
+
+#: aliases.php:115 edit.php:115 edit_request.php:115 friendmail.php:115
+#: index.php:115 Key.php:115 login2.php:115 login3.php:115
+#: login_answer.php:115 newfeaturess.php:115 onlysolved.php:115
+#: problem_out.php:115 Search.php:115 solved_pending.php:115
+#: solved_pending.php:499 subjectview4.php:115
+msgid "Solved Problems"
+msgstr ""
+
+#: aliases.php:116 aliases.php:174 edit.php:116 edit.php:174
+#: edit_request.php:116 edit_request.php:174 friendmail.php:116
+#: friendmail.php:174 index.php:116 index.php:174 Key.php:116 Key.php:174
+#: login2.php:116 login2.php:174 login3.php:116 login3.php:174
+#: login_answer.php:116 login_answer.php:174 newfeaturess.php:116
+#: newfeaturess.php:174 onlysolved.php:116 onlysolved.php:174
+#: problem_out.php:116 problem_out.php:174 Search.php:116 Search.php:174
+#: solved_pending.php:116 solved_pending.php:174 subjectview4.php:116
+#: subjectview4.php:174
+msgid "Search"
+msgstr ""
+
+#: aliases.php:170 edit.php:170 edit_request.php:170 friendmail.php:170
+#: index.php:170 Key.php:170 login2.php:170 login3.php:170
+#: login_answer.php:170 newfeaturess.php:170 onlysolved.php:170
+#: problem_out.php:170 Search.php:170 solved_pending.php:170
+#: subjectview4.php:170
+msgid "Quick Search:"
+msgstr ""
+
+#: aliases.php:183 edit.php:183 edit_request.php:183 friendmail.php:183
+#: index.php:183 Key.php:183 login2.php:183 login3.php:183
+#: login_answer.php:183 newfeaturess.php:183 onlysolved.php:183
+#: problem_out.php:183 Search.php:183 solved_pending.php:183
+#: subjectview4.php:183
+msgid "Administration Menu:"
+msgstr ""
+
+#: aliases.php:188 edit.php:188 edit_request.php:188 friendmail.php:188
+#: index.php:188 Key.php:188 login2.php:188 login3.php:188
+#: login_answer.php:188 newfeaturess.php:188 onlysolved.php:188
+#: problem_out.php:188 Search.php:188 solved_pending.php:188
+#: subjectview4.php:188
+msgid "Technichian Control"
+msgstr ""
+
+#: aliases.php:189 edit.php:189 edit_request.php:189 friendmail.php:189
+#: index.php:189 Key.php:189 login2.php:189 login3.php:189
+#: login_answer.php:189 newfeaturess.php:189 onlysolved.php:189
+#: problem_out.php:189 Search.php:189 solved_pending.php:189
+#: subjectview4.php:189
+msgid "Tasks"
+msgstr ""
+
+#: aliases.php:193 edit.php:193 edit_request.php:193 friendmail.php:193
+#: index.php:193 Key.php:193 login2.php:193 login3.php:193
+#: login_answer.php:193 newfeaturess.php:193 onlysolved.php:193
+#: problem_out.php:193 Search.php:193 solved_pending.php:193
+#: subjectview4.php:193
+msgid "Administrator Control"
+msgstr ""
+
+#: aliases.php:194 edit.php:194 edit_request.php:194 friendmail.php:194
+#: index.php:194 Key.php:194 login2.php:194 login3.php:194
+#: login_answer.php:194 newfeaturess.php:194 onlysolved.php:194
+#: problem_out.php:194 Search.php:194 solved_pending.php:194
+#: subjectview4.php:194
+msgid "New Task"
+msgstr ""
+
+#: aliases.php:217 edit.php:217 edit_request.php:217 friendmail.php:217
+#: index.php:217 Key.php:217 login2.php:217 login3.php:217
+#: login_answer.php:217 newfeaturess.php:217 onlysolved.php:217
+#: problem_out.php:217 Search.php:217 solved_pending.php:217
+#: subjectview4.php:217
+msgid "You are logged in as: "
+msgstr ""
+
+#: aliases.php:221 edit.php:221 edit_request.php:221 friendmail.php:221
+#: index.php:221 Key.php:221 login2.php:221 login3.php:221
+#: login_answer.php:221 newfeaturess.php:221 onlysolved.php:221
+#: problem_out.php:221 Search.php:221 solved_pending.php:221
+#: subjectview4.php:221
+msgid "You are viewing this page as a guest"
+msgstr ""
+
+#: aliases.php:228 edit.php:228 edit_request.php:228 friendmail.php:228
+#: index.php:228 Key.php:228 login2.php:228 login3.php:228
+#: login_answer.php:228 newfeaturess.php:228 onlysolved.php:228
+#: problem_out.php:228 Search.php:228 solved_pending.php:228
+#: subjectview4.php:228
+msgid "Log Out"
+msgstr ""
+
+#: aliases.php:228 edit.php:228 edit_request.php:228 friendmail.php:228
+#: index.php:228 Key.php:228 login2.php:228 login3.php:228
+#: login_answer.php:228 newfeaturess.php:228 onlysolved.php:228
+#: problem_out.php:228 Search.php:228 solved_pending.php:228
+#: subjectview4.php:228
+msgid "Login"
+msgstr ""
+
+#: edit_request.php:335
+msgid "Edit your request"
+msgstr ""
+
+#: edit_request.php:341
+msgid ""
+"You can edit your posted answer any time. You can view the answers to still "
+"pending problems at the"
+msgstr ""
+
+#: edit_request.php:341 problem_out.php:264 subjectview4.php:454
+msgid "Request"
+msgstr ""
+
+#: edit_request.php:341
+msgid "Answer section."
+msgstr ""
+
+#: edit_request.php:348 problem_out.php:272
+msgid "Name:"
+msgstr ""
+
+#: edit_request.php:356
+msgid "Email:"
+msgstr ""
+
+#: edit_request.php:366
+msgid "Urgent Request:"
+msgstr ""
+
+#: edit_request.php:372
+msgid "Subject of problem:"
+msgstr ""
+
+#: edit_request.php:380
+msgid "Detailed description of your problem:"
+msgstr ""
+
+#: edit_request.php:389
+msgid "Save"
+msgstr ""
+
+#: edit_request.php:391
+msgid "Cancel"
+msgstr ""
+
+#: edit_request.php:394 problem_out.php:334
+msgid "Note"
+msgstr ""
+
+#: edit_request.php:395 problem_out.php:335
+msgid ""
+": You will be notified at the email address you gave above, every time "
+"someone follows up or solves your request."
+msgstr ""
+
+#: index.php:243
+msgid "Welcome to Helpdesk!"
+msgstr ""
+
+#: index.php:244
+msgid ""
+"Helpdesk v1.4.p is the first point of contact when you have a computer-"
+"related problem.It is our sincere hope that you will find exactly what you "
+"are looking for among these Online Helpdesk pages. Through this site you can"
+msgstr ""
+
+#: index.php:244
+msgid "Report your problem"
+msgstr ""
+
+#: index.php:244
+msgid ""
+"and get a prompt answer or  search  on solved unsolved problems on-line, "
+"find out the most useful"
+msgstr ""
+
+#: index.php:244
+msgid "Email aliases"
+msgstr ""
+
+#: index.php:244
+msgid "Online help"
+msgstr ""
+
+#: index.php:244
+msgid ""
+" and many many others. Any time someone replies to your request you will "
+"receive a notification at your email. If you are unable to find your "
+"solution here, please call the Helpdesk at 22892727 or 22892728. For any "
+"suggestions please contact the Helpdesk Team."
+msgstr ""
+
+#: index.php:245
+msgid ""
+"You must be logged-in before entering a request,  an answer to a problem, or "
+"viewing the email aliases. You  can login by using the username and password "
+"that you use to check your email."
+msgstr ""
+
+#: index.php:246
+msgid "Note that this is"
+msgstr ""
+
+#: index.php:246
+msgid ""
+"The P stands for PHP marking the conversion of the Helpdesk from ASP to PHP "
+"(a more friendly approach to life)"
+msgstr ""
+
+#: index.php:247
+msgid "Click Here to see HelpDesk new features."
+msgstr ""
+
+#: Key.php:248
+msgid "Search in our pages"
+msgstr ""
+
+#: Key.php:251
+msgid ""
+"Here you can search for a term or a sentence in reported problems, answers, "
+"and announcements. You must enter a key term which can also include spaces, "
+"commas, and any other symbol. You can also search for a date, a topic, or an "
+"originator. Results are shown in different tables for announcements, "
+"answers, and reported requests. Additionally, there is an extra feature for "
+"viewing a problem by entering directly the Problem Number."
+msgstr ""
+
+#: Key.php:290
+msgid "Insert your search term below"
+msgstr ""
+
+#: Key.php:291
+msgid ""
+"Enter a search term that you want to find in reported problems, answers and "
+"announcements "
+msgstr ""
+
+#: Key.php:302
+msgid "View Problem No"
+msgstr ""
+
+#: Key.php:303
+msgid "Enter a Problem No, which you want to view"
+msgstr ""
+
+#: login2.php:342
+msgid "Welcome to HelpDesk"
+msgstr ""
+
+#: login2.php:343
+msgid "University of Cyprus"
+msgstr ""
+
+#: login2.php:343
+msgid "Department of Computer Science"
+msgstr ""
+
+#: login2.php:350 login3.php:345 login_answer.php:349
+msgid "User Name"
+msgstr ""
+
+#: login2.php:354 login3.php:349 login_answer.php:353
+msgid "Password"
+msgstr ""
+
+#: login2.php:358 login3.php:353 login_answer.php:357
+msgid "Reset"
+msgstr ""
+
+#: login2.php:359 login3.php:354 login_answer.php:358
+msgid "OK"
+msgstr ""
+
+#: login2.php:366 login3.php:361
+msgid "* Access to this system requires a username and password."
+msgstr ""
+
+#: login2.php:368 login3.php:363 login_answer.php:367
+msgid ""
+"Remember, you can use the same username and password that you use to check "
+"your email."
+msgstr ""
+
+#: login_answer.php:365
+msgid "Access to this system requires a username and password."
+msgstr ""
+
+#: onlysolved.php:315
+msgid "Directory of All the Solved Problems"
+msgstr ""
+
+#: onlysolved.php:318
+msgid ""
+"This is an archive of all solved problems. You can navigate through the "
+"archive with the forward and backward options available from the menu."
+msgstr ""
+
+#: onlysolved.php:344
+msgid "Last "
+msgstr ""
+
+#: onlysolved.php:346
+msgid " Solved Problems"
+msgstr ""
+
+#: onlysolved.php:357 Search.php:358 solved_pending.php:479
+msgid "Sort by"
+msgstr ""
+
+#: onlysolved.php:360 onlysolved.php:402 Search.php:360 Search.php:388
+#: Search.php:530 Search.php:680 solved_pending.php:349 solved_pending.php:481
+#: solved_pending.php:509 solved_pending.php:668
+msgid "No"
+msgstr ""
+
+#: onlysolved.php:361 onlysolved.php:403 Search.php:361 Search.php:389
+#: Search.php:531 solved_pending.php:350 solved_pending.php:482
+#: solved_pending.php:510 solved_pending.php:669
+msgid "State"
+msgstr ""
+
+#: onlysolved.php:362 onlysolved.php:404 Search.php:362 Search.php:390
+#: Search.php:532 solved_pending.php:351 solved_pending.php:483
+#: solved_pending.php:511 solved_pending.php:670
+msgid "Topic"
+msgstr ""
+
+#: onlysolved.php:363 onlysolved.php:405 Search.php:363 Search.php:391
+#: Search.php:533 solved_pending.php:352 solved_pending.php:484
+#: solved_pending.php:512 solved_pending.php:671
+msgid "Originator"
+msgstr ""
+
+#: onlysolved.php:364
+msgid "Date Reported"
+msgstr ""
+
+#: onlysolved.php:365
+msgid "Date Solved"
+msgstr ""
+
+#: onlysolved.php:368 Search.php:367 solved_pending.php:488
+msgid "Ascending"
+msgstr ""
+
+#: onlysolved.php:369 Search.php:368 solved_pending.php:489
+msgid "Decending"
+msgstr ""
+
+#: onlysolved.php:371
+msgid "No Per page"
+msgstr ""
+
+#: onlysolved.php:373
+msgid "Default 30"
+msgstr ""
+
+#: onlysolved.php:374
+msgid "50"
+msgstr ""
+
+#: onlysolved.php:375
+msgid "100"
+msgstr ""
+
+#: onlysolved.php:376
+msgid "250"
+msgstr ""
+
+#: onlysolved.php:377
+msgid "400"
+msgstr ""
+
+#: onlysolved.php:378
+msgid "700"
+msgstr ""
+
+#: onlysolved.php:379
+msgid "1000"
+msgstr ""
+
+#: onlysolved.php:382 solved_pending.php:497
+msgid "Options"
+msgstr ""
+
+#: onlysolved.php:383
+msgid "Next "
+msgstr ""
+
+#: onlysolved.php:383 onlysolved.php:384
+msgid " Solved"
+msgstr ""
+
+#: onlysolved.php:384
+msgid "Previous "
+msgstr ""
+
+#: onlysolved.php:386
+msgid "Go to Start"
+msgstr ""
+
+#: onlysolved.php:387
+msgid "Request "
+msgstr ""
+
+#: onlysolved.php:389
+msgid "Answers Table"
+msgstr ""
+
+#: onlysolved.php:391 solved_pending.php:501
+msgid "Exit"
+msgstr ""
+
+#: onlysolved.php:406 Search.php:364 Search.php:392 Search.php:534
+#: Search.php:681 solved_pending.php:353 solved_pending.php:485
+#: solved_pending.php:513 solved_pending.php:672
+msgid "Date"
+msgstr ""
+
+#: onlysolved.php:407 Search.php:393 Search.php:535 solved_pending.php:354
+#: solved_pending.php:514 solved_pending.php:673
+msgid "Replies From"
+msgstr ""
+
+#: onlysolved.php:544 solved_pending.php:824
+msgid "Solved Problems (Only technicians set problems to that state)"
+msgstr ""
+
+#: onlysolved.php:546 solved_pending.php:826
+msgid "Problems that haven't been solved yet or pending problems"
+msgstr ""
+
+#: onlysolved.php:548 solved_pending.php:828
+msgid "Urgent Problems (by user)"
+msgstr ""
+
+#: onlysolved.php:550 solved_pending.php:830
+msgid "Extra Urgent Problem (by administrator)"
+msgstr ""
+
+#: problem_out.php:264
+msgid ""
+"You can inform us about your new problem, at any time, by filling out the "
+"following form. You can view the answers to still pending problems at the"
+msgstr ""
+
+#: problem_out.php:264
+msgid ""
+"  Answer section. If your problem is very urgent , you can contact the "
+"Technical support team directly. See the contacts list."
+msgstr ""
+
+#: problem_out.php:281
+msgid "Email&nbsp;:"
+msgstr ""
+
+#: problem_out.php:293
+msgid "Urgent Request"
+msgstr ""
+
+#: problem_out.php:295 problem_out.php:307
+msgid "Yes"
+msgstr ""
+
+#: problem_out.php:305
+msgid "Private Request"
+msgstr ""
+
+#: problem_out.php:316
+msgid "Subject of problem"
+msgstr ""
+
+#: problem_out.php:325
+msgid "Detailed description of your problem"
+msgstr ""
+
+#: problem_out.php:330
+msgid "Submit Problem"
+msgstr ""
+
+#: problem_out.php:331
+msgid "Reset Form"
+msgstr ""
+
+#: Search.php:348
+msgid "Search Results for the key term"
+msgstr ""
+
+#: Search.php:370 solved_pending.php:491
+msgid "Go"
+msgstr ""
+
+#: Search.php:380 Search.php:520
+msgid "Results in reported Answers"
+msgstr ""
+
+#: Search.php:670
+msgid "Results in reported Announcements"
+msgstr ""
+
+#: Search.php:682
+msgid "Author"
+msgstr ""
+
+#: Search.php:683
+msgid "Subject"
+msgstr ""
+
+#: Search.php:684
+msgid "Renewal Date"
+msgstr ""
+
+#: Search.php:686 Search.php:710 subjectview4.php:457 subjectview4.php:554
+msgid "Edit"
+msgstr ""
+
+#: solved_pending.php:337
+msgid "Requests"
+msgstr ""
+
+#: solved_pending.php:337
+msgid "Answers"
+msgstr ""
+
+#: solved_pending.php:340
+msgid ""
+"This page displays problems and requests that are still pending. To see the "
+"solved problems, or the explanation of the icons, select the appropriate "
+"option from the menu below."
+msgstr ""
+
+#: solved_pending.php:345
+msgid "Extra Urgent Problems"
+msgstr ""
+
+#: solved_pending.php:494
+msgid "Pending Problems"
+msgstr ""
+
+#: solved_pending.php:498
+msgid "Last 30 Solved problems"
+msgstr ""
+
+#: solved_pending.php:500
+msgid "Explanation of Icons"
+msgstr ""
+
+#: solved_pending.php:653
+msgid "Last 30 solved problems"
+msgstr ""
+
+#: solved_pending.php:653
+msgid "(Sort default by date solved)"
+msgstr ""
+
+#: solved_pending.php:817
+msgid "No problems reported in the above period"
+msgstr ""
+
+#: subjectview4.php:391
+msgid "This is the first problem"
+msgstr ""
+
+#: subjectview4.php:397
+msgid "&lt;Previous Problem"
+msgstr ""
+
+#: subjectview4.php:399
+msgid "Main Table"
+msgstr ""
+
+#: subjectview4.php:405
+msgid "This is the last Problem"
+msgstr ""
+
+#: subjectview4.php:410
+msgid "Next Problem &gt;"
+msgstr ""
+
+#: subjectview4.php:438
+msgid "Email to a friend"
+msgstr ""
+
+#: subjectview4.php:447
+msgid "Login to enter an answer to this problem"
+msgstr ""
+
+#: subjectview4.php:455 subjectview4.php:552
+msgid "by"
+msgstr ""
+
+#: subjectview4.php:461 subjectview4.php:557
+msgid "Date Reported :"
+msgstr ""
+
+#: subjectview4.php:490
+msgid "Assigned to:"
+msgstr ""
+
+#: subjectview4.php:551
+msgid "Answer"
+msgstr ""
+
+#: subjectview4.php:604
+msgid "Turn to normal state"
+msgstr ""
+
+#: subjectview4.php:607
+msgid "Make Urgent"
+msgstr ""
+
+#: subjectview4.php:618
+msgid "Technician Email"
+msgstr ""
+
+#: subjectview4.php:625
+msgid "State of the problem"
+msgstr ""
+
+#: subjectview4.php:626
+msgid "Solved"
+msgstr ""
+
+#: subjectview4.php:627
+msgid "Pending"
+msgstr ""
+
+#: subjectview4.php:628
+msgid "Assign this problem to me"
+msgstr ""
+
+#: subjectview4.php:631
+msgid "Submit"
+msgstr ""
+
+#: subjectview4.php:632
+msgid "Clear"
+msgstr ""
+
+#: subjectview4.php:659
+msgid "Full Name"
+msgstr ""
+
+#: subjectview4.php:663
+msgid "Enter your Comments."
+msgstr ""
+
+#: subjectview4.php:666
+msgid "Submit Information"
+msgstr ""
+
+#: subjectview4.php:667
+msgid "Clear Fields"
+msgstr ""

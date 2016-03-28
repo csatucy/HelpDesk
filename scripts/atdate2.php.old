@@ -1,0 +1,630 @@
+<? 
+// asp2php says 'huh'?: =true;
+
+
+Function DateDiff
+($interval,$date1,$date2) {
+    // get the number of seconds between the two dates
+$timedifference = $date2 - $date1;
+
+    switch ($interval) {
+        case 'w':
+            $retval = bcdiv($timedifference,604800);
+            break;
+        case 'd':
+            $retval = bcdiv($timedifference,86400);
+            break;
+        case 'h':
+            $retval =bcdiv($timedifference,3600);
+            break;
+        case 'n':
+            $retval = bcdiv($timedifference,60);
+            break;
+        case 's':
+            $retval = $timedifference;
+            break;
+            
+    }
+    return $retval;
+
+}
+?>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><!-- InstanceBegin template="/Templates/old/Temp22.dwt.old" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+
+<? 
+ session_start();
+ (strncmp($_SERVER["HTTP_HOST"],"helpdesk", 8)== 0) ? $_SESSION['directory_name'] = $_SERVER['DOCUMENT_ROOT'] : $_SESSION['directory_name'] = $_SERVER['DOCUMENT_ROOT'].'/phpHelpDesk';
+ session_start();
+
+ 
+//$_SESSION['directory_name'] = $_SERVER['DOCUMENT_ROOT'].'/phpHelpDesk';
+require_once($_SESSION['directory_name'].'/Connections/helpdeskphp.php');
+require ($_SESSION['directory_name'].'/configs/config.inc.php');
+require ($_SESSION['directory_name'].'/Libs/common.lib.php');
+//include ($_SESSION['directory_name'].'/lang/en.inc.php');
+//include ($_SESSION['directory_name'].'/lang/el.inc.php');
+require($_SESSION['directory_name'].'/configs/localization.php');
+connectDB();
+error();
+
+$what=$_POST["what"];
+
+?>
+
+<title>Help Desk - Get answers to your questions - v. <? echo $VERSION; ?> </title>
+
+<style type="text/css">
+<!--
+@import url("../andry_styles.css");
+.style12 {font-weight: bolder}
+.style17 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.style19 {color: #FFFFFF; font-size: 14px; }
+.style20 {font-size: 14px}
+.style21 {color: #FFFFFF}
+.style22 {color: #000000}
+-->
+</style>
+</head>
+
+<body>
+<div id="Layer6" style="position:absolute; left:1px; top:0px; width:975px; height:25px; z-index:6; visibility: visible;" class="titlosGrante" align="center">
+  <div align="center">Helpdesk <?php echo $VERSION ?> </div>
+</div>
+<div id="Layer9" style="position:absolute; left:39px; top:-2px; width:182px; height:88px; z-index:9; background-image: url(../pictures/ucylogo_small6.gif); layer-background-image: url(../pictures/ucylogo_small6.gif); border: 1px none #000000;"></div>
+<div id="Layer1" style="position:absolute; left:-4px; top:39px; width:950px; height:41px; z-index:1; background-color: #CCCC99; layer-background-color: #CCCC99; border: 1px none #000000; visibility: visible;">
+  <div align="center">
+    <p align="center" class="textintence style22"> <?php echo _("University of Cyprus - Department of Computer Science"); ?></p>
+  </div>
+</div><div id="Layer1" style="position:absolute; left:-4px; top:88px; width:930px; z-index:3; background-color: #CC6600; layer-background-color: #CC6600; border: 1px none #000000; overflow: visible; height: 3px; visibility: visible;">
+  <div align="center">
+    <p align="center" class="textintence"></p>
+  </div>
+</div>
+<div id="Layer2" style="position:absolute; left:30px; top:5px; width:155px; height:927px; z-index:2; background-color: #DEDEBE; layer-background-color: #DEDEBE; border: 1px none #000000;">
+  <br>
+  <br>
+  <br>
+  <br>
+ <br>
+  
+  <div align="center" class="style17" style="background-color:#663300">
+    
+    <p><span class="style19"><?php echo _("Menu:"); ?></span><span class="style20"></span></span><br>
+    </p>
+  </div>
+  <ul>
+    <li>
+      <div align="left">        <a href="../problem_out.php"><?php echo _("Enter Request"); ?> </a> </div>
+      <HR align="left">
+    </li>
+    <li>
+        <div align="left"><a href="../solved_pending.php"><?php echo _("Requests  Answers"); ?> </a>
+        </div>
+      <HR align="left">
+    </li>
+    <li>
+        <div align="left"><a href="../onlysolved.php"><?php echo _("Solved Problems"); ?>
+                      </a>
+        </div>
+      <HR align="left">
+    </li>
+    <li>
+        <div align="left"><a href="../aliases.php"><?php echo _("Emai Aliases"); ?>
+                      </a>
+        </div>
+      <HR align="left">
+    </li>
+    <li>
+      <div align="left"><a href="http://www2.cs.ucy.ac.cy/Computing" target="_blank"><?php echo _("Computing Guides"); ?>
+                    </a>
+      </div>
+      <HR align="left">
+    </li>
+    <li>
+      <div align="left"><a href="../announcements/announcements.php"><?php echo _("Announcements"); ?>
+                    </a>
+      </div>
+      <HR align="left">
+    </li>
+    <li>
+      <a href="../Key.php"><?php echo _("Search"); ?></a>
+      <HR align="left">
+      <form action="../Search.php" method="post" name="FrontPage_Fom3" id="FrontPage_Fom3" onSubmit="return form1_Validator(this)" >
+        
+        <div align="left">
+          <label class="text"><u><?php echo _("Quick Search:"); ?></u></label>
+          <br>
+          <input name="what" type="text" id="what" value="" size="10">
+          <br>
+          <input type="submit" name="Submit" value="<?php echo _("Search"); ?>">
+        </div>
+        </a>
+      </form>
+     
+  </ul>
+	   <?php if ($_SESSION['valid_tech'])
+            {?> 
+	   <div align="center" class="style17" style="background-color:#663300">
+	     <div align="center"><span class="style19"><?php echo _("Administration Menu:"); ?> </span><br>
+         </div>
+	   </div>
+	   <ul>
+    <li><a href="../admin/techtesting.php"><?php echo _("Technichian Control"); ?></a></li>
+		        <HR align="left">
+		        <?php } ?>    <?php if ($_SESSION['valid_admin'])
+            {?> 
+ 
+    <li>
+      <a href="../admin/admin.php"><?php echo _("Administrator Control"); ?> </a></li>
+        <HR align="left">
+                
+                <?php } ?>
+  </ul>
+	   <div align="center"><img src="../pictures/Epl_small_round2.gif" width="100" height="95">
+       </div>
+</div>
+ 
+</div>
+<div id="Layer3" style="position:absolute; left:937px; top:9px; width:41px; height:83px; z-index:3; background-color: #000000; layer-background-color: #000000; border: 3px solid #FFFF66 ;"></div>
+<div id="Layer4" style="position:absolute; left:897px; top:18px; width:44px; height:57px; z-index:4; background-color: #FFFFCC; layer-background-color: #FFFFCC; border: 3px solid #FFFF66;"></div>
+<div id="Layer5" style="position:absolute; left:873px; top:17px; width:90px; height:32px; z-index:5; background-color: #663300;  layer-background-color: #663300; border: 3px solid #FFFF66; overflow: visible;"></div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<table width="100%" height="94" border="0">
+  <tr>
+    <th width="15%" height="90" align="center" nowrap scope="col" class="style12" ><input type="image" name="imageField" src="../pictures/blank.GIF"></th>
+    <th scope="col"><table width="100%" height="78" border="0" align="center" id="navBar">
+      <tr>
+        <th height="40" scope="col"><table width="90%" border="0" align="right" cellpadding="0" cellspacing="0">
+            <tr>
+            
+ <span class="style12">
+ 
+ <a href="?locale=en_US">English</a> | <a href="?locale=el_GR">Greek</a> | 
+            <?php  if ($_SESSION['valid_user'])
+  {?>
+                           
+              
+
+             <em><strong><?php echo _("You are logged in as: "); echo($_SESSION['valid_user']);?></strong></em>
+         
+              <small><a href="../logout.php" class="logo"><?php echo _("Log Out"); ?></a></small>
+             
+              <? }
+  else
+  {?>
+               <em><strong><?php echo _("You are viewing this page as a guest"); echo($valid_user); ?></strong></em>
+              <small><a href="../login_answer.php" class="logo"><?php echo _("Login"); ?></a></small>
+              <?}?>
+              </span>
+            </tr>
+          </table>
+            <script Language="JavaScript"><!--
+function form1_Validator(theForm)
+{ 
+ 
+	 if (theForm.what.value.length <2)
+  {
+    alert("Please enter a value for the \"search term\" field. At least 2 chars.");
+    theForm.what.focus();
+    return (false);
+  }   
+  
+  	 
+
+  return (true);
+ 
+}
+//--></script>
+            <!-- InstanceBeginEditable name="EditRegion5" -->
+<? 
+$myDSN="DSN=helpdesknew";
+
+
+(strncmp ($_SERVER["HTTP_HOST"],"testing", 7)== 0) ? $db_server = "localhost:3306" : $db_server = "dbserver:3306";
+$a2p_connstr=$myDSN;
+$a2p_uid=strstr($a2p_connstr,'uid');
+$a2p_uid=substr($d,strpos($d,'=')+1,strpos($d,';')-strpos($d,'=')-1);
+$a2p_pwd=strstr($a2p_connstr,'pwd');
+$a2p_pwd=substr($d,strpos($d,'=')+1,strpos($d,';')-strpos($d,'=')-1);
+$conntemp=mysql_connect($db_server,$a2p_uid,$a2p_pwd);
+mysql_select_db("",$conntemp);
+mysql_query("SET NAMES utf8");
+$d1=$_GET["d1"];
+$d2=$_GET["d2"];
+$d3=$_GET["d3"];
+$a1=$_GET["a1"];
+$a2=$_GET["a2"];
+$a3=$_GET["a3"];
+$str_month1=$d2."/".$d1."/".$d3;
+$str_month2=$a2."/".$a1."/".$a3;
+$str_month1_t=$d1."/".$d2."/".$d3;
+$str_month2_t=$a1."/".$a2."/".$a3;
+
+
+$mySQL="select * from problems ";
+$mySQL=$mySQL." where state=0 AND (indate > #".$str_month1."# OR  indate = #".$str_month1."#) AND  ( indate < #".$str_month2."# OR  indate = #".$str_month2."#)";
+$mySQL=$mySQL." ORDER BY problemID DESC";
+$IDfield="problemid";
+$scriptresponder="subjectview4.php";
+
+
+
+$rstemp_query=mysql_query(($mySQL),$conntemp);
+//$rstemp=mysql_fetch_array($rstemp_query);
+?>
+<form>
+<table border="0" height="1" width="579" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="575" align="center" bgcolor="#82A2D2" height="21">
+        <font face="Arial" align="center" color="#FFFFFF" size="4"><b> Search By Date - Results</b></font></td>
+  </tr>
+  <tr>
+    <td width="575" align="center" bgcolor="#C7E6F8" valign="top">
+    <font face="Arial" size="1">Search reported Requests in the Helpdesk database.<br>
+    				   You can also <a href="../search2.php">search by keyword</a>.
+    </font>
+    </td>
+  </tr>
+
+  <tr>
+  	 <td width="575" bgcolor="#EAF5FF" height="1" align="right">
+        <table border="0" width="575">
+  		<tr>
+           <td width="130">&nbsp;</td>
+           <td align="center" nowrap>
+              <font face="arial" color="black" size="2"><b>Problems reported between</b><font face="arial" color="red"><b><? echo $str_month1_t; ?> - <? echo $str_month2_t; ?></b></font>
+           </td>
+           <td align="right" valign="center" width="130">
+           &nbsp;
+		    	  <select name="menu1" onChange="go(this, 1, false)">
+  		  	          <option value="1"> - Options - </option>
+  		 	          <option value="2">Search By Date</option>
+  		 	          <option value="2">Search By Keyword</option>
+  			          <option value="3">Exit</option>
+	          </select>
+  		    </td>
+  		</tr>
+  		</table>
+   	  </td>
+  	</tr>
+  </table>
+</form>
+<br>
+
+<table width="100%" border="0">
+  <tr>
+    <td width="100%"><table border="0" width="100%" align="center" height="62">
+        <tr>
+          <td bgcolor="#008080" width="4%" height="22"><p align="center"><small><em><font
+        color="#FFFFFF"><strong>No</strong></font></em></small></td>
+          <td bgcolor="#008080" width="3%" height="22" align="center"><small><em><font
+        color="#FFFFFF"><strong>State</strong></font></em></small></td>
+          <td bgcolor="#008080" width="31%" height="22"><p align="center"><small><em><font
+        color="#FFFFFF"><strong>Topic</strong></font></em></small></td>
+          <td bgcolor="#008080" width="22%" height="22"><p align="center"><small><em><font
+        color="#FFFFFF"><strong>Originator</strong></font></em></small></td>
+          <td bgcolor="#008080" width="6%" height="22" align="center"><p align="center"><small><em><font
+        color="#FFFFFF"><strong>Date</strong></font></em></small></td>
+          <td bgcolor="#008080" width="22%" height="22"><p align="center"><small><em><font
+        color="#FFFFFF"><strong>Replies From</strong></font></em></small></td>
+        </tr>
+        <? // Now lets grab all the records
+
+$count=0;
+while(!($rstemp==0))
+{
+
+  $count=$count+1;
+  $problemid=$rstemp["problemid"];
+  $form_subject=$rstemp["subject"];
+  $form_indate=$rstemp["indate"];
+  $form_name=$rstemp["name"];
+  $urgency=$rstemp["urgency"];
+
+
+  $mySQLreplies="select * from answers ";
+  $mySQLreplies=$mySQLreplies."where problemid=".$problemid;
+  $mySQLreplies=$mySQLreplies." ORDER BY answerid ASC";
+
+
+  $mySQLstate="select * from answers ";
+  $mySQLstate=$mySQLstate."where problemid=".$problemid;
+  $mySQLstate=$mySQLstate." ORDER BY answerid DESC";
+
+
+$rsReplies_query=mysql_query(($mySQLreplies),$conntemp);  
+$rsReplies=mysql_fetch_array($rsReplies_query);
+$rsstate_query=mysql_query(($mySQLstate),$conntemp);  
+$rsstate=mysql_fetch_array($rsstate_query);
+
+?>
+        <?  // if (($count$MOD2)==0)
+ {
+?>
+        <tr>
+          <td valign="top" "width="100%" height="14" bgcolor="#DAF8FE"><small>
+            <?     echo $problemid; ?>
+          </small> </td>
+          <td valign="top" "width="100%" height="14" bgcolor="#DAF8FE" align="center"><p
+        align="center">
+              <? 
+    $flag2=0;
+    $statement=0;
+while(!($rsstate==0))
+    {
+
+      if ($flag2==0)
+      {
+
+        $statement=$rsstate["state"];
+        $tech=$rsstate["name"];
+        $flag2=1;
+      } 
+
+      $rsstate=mysql_fetch_array($rsstate_query);
+
+    } 
+    if (($statement=="0") && $urgency=="1")
+    {
+
+      echo "<img src='../pictures/hot.gif' alt='Urgent Problem! - Administrator notified via email' >";
+    } 
+
+    if !($stetement=="0")
+    {
+
+      echo "<img src='../pictures/yellockfolder.gif' alt='Checked as Solved Problem by ".$tech."' >";
+}
+      else
+    if ((($statement=="0") && !($urgency=="1")))
+    {
+      $then;
+      echo "<img  src='../pictures/closed.gif' alt='Pending or Unsolved by Technician' >";
+    } 
+
+
+?>
+          </td>
+          <td valign="top" "width="100%" height="14" bgcolor="#DAF8FE"><?     $my_link=$scriptresponder."?which=".$rstemp[$idfield]; ?>
+              <p><small><a
+        HREF="<?     echo $my_link; ?>">
+                <?     echo $form_subject; ?>
+            </a></small></td>
+          <td valign="top" "width="100%" height="14" bgcolor="#DAF8FE" nowrap><small>
+            <?     echo $form_name; ?>
+          </small> </td>
+          <td valign="top" "width="100%" height="14" bgcolor="#DAF8FE" align="center"><small>
+            <?     echo $form_indate; ?>
+          </small> </td>
+          <td valign="top" "width="100%" height="14" bgcolor="#DAF8FE" nowrap><small><small>
+            <? 
+    $flag=0;
+    $countH=0;
+while(!($rsReplies==0))
+    {
+
+      $flag=1;
+      $reply_name=$rsReplies["name"];
+      $reply_email=$rsReplies["techemail"];
+      $indate2=$rsReplies["indate2"];
+      $theString=$reply_name.", ".$indate2."<br>";
+      $count2=0;
+while(($countH>$count2))
+      {
+
+        $theString="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$theString;
+        $count2=$count2+1;
+      } 
+      $countH=$countH+1;
+      echo $theString;
+
+      $rsReplies=mysql_fetch_array($rsReplies_query);
+
+    } 
+    if ($flag==0)
+    {
+
+      echo "<center><font color='#800080'>No Answer</font></center>";
+    } 
+
+?>
+          </small></small> </td>
+        </tr>
+        <?   }
+  // else
+  {
+?>
+        <tr>
+          <td bgcolor="#B8DCDC" valign="top" width="4%" height="14"><small>
+            <?     echo $problemid; ?>
+          </small> </td>
+          <td bgcolor="#B8DCDC" valign="top" width="3%" height="14" align="center"><p align="center">
+              <? 
+    $flag2=0;
+    $statement=0;
+while(!($rsstate==0))
+    {
+
+      if ($flag2==0)
+      {
+
+        $statement=$rsstate["state"];
+        $tech=$rsstate["name"];
+        $flag2=1;
+      } 
+
+      $rsstate=mysql_fetch_array($rsstate_query);
+
+    } 
+    if (($statement=="0") && $urgency=="1")
+    {
+
+      echo "<img src='../pictures/hot.gif' alt='Urgent Problem! - Administrator notified via email' >";
+    } 
+
+    if !($stetement=="0")
+    {
+
+      echo "<img src='../pictures/yellockfolder.gif' alt='Checked as Solved Problem by ".$tech."' >";
+}
+      else
+    if (($statement=="0") && !($urgency=="1"))
+    {
+      $then;
+      echo "<img  src='../pictures/closed.gif' alt='Pending or Unsolved by Technician' >";
+    } 
+
+
+?>
+          </td>
+          <td bgcolor="#B8DCDC" valign="top" "width="100%" height="14"><?     $my_link=$scriptresponder."?which=".$rstemp[$idfield]; ?>
+              <p><small><a
+        HREF="<?     echo $my_link; ?>">
+                <?     echo $form_subject; ?>
+            </a></small></td>
+          <td bgcolor="#B8DCDC" valign="top" width="22%" height="14" nowrap><small>
+            <?     echo $form_name; ?>
+          </small> </td>
+          <td bgcolor="#B8DCDC" valign="top" width="6%" height="14" align="center"><small>
+            <?     echo $form_indate; ?>
+          </small></td>
+          <td bgcolor="#B8DCDC" valign="top" width="22%" height="14" nowrap><small><small>
+            <?     $flag=0;
+    $countH=0;
+while(!($rsReplies==0))
+    {
+
+      $flag=1;
+      $reply_name=$rsReplies["name"];
+      $reply_email=$rsReplies["techemail"];
+      $indate2=$rsReplies["indate2"];
+      $theString=$reply_name.", ".$indate2."<br>";
+      $count2=0;
+while(($countH>$count2))
+      {
+
+        $theString="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$theString;
+        $count2=$count2+1;
+      } 
+      $countH=$countH+1;
+      echo $theString;
+
+
+      $rsReplies=mysql_fetch_array($rsReplies_query);
+
+    } 
+    if ($flag==0)
+    {
+
+      echo "<center><font color='#800080'>No Answer</font></center>";
+    } 
+
+?>
+          </small></small> </td>
+        </tr>
+        <?   } ?>
+        <? 
+  $rstemp=mysql_fetch_array($rstemp_query);
+
+} 
+
+$rstemp_query=mysql_query(($mySQL),$conntemp);
+//$rstemp=mysql_fetch_array($rstemp_query);
+
+$rstemp=null;
+
+mysql_close($conntemp);
+$conntemp=null;
+
+?>
+    </table></td>
+  </tr>
+</table>
+<? if ($count==0)
+{
+?>
+<strong>
+
+<p align="center">No records returned</p></strong> <? } ?> 
+<?  if (datediff("d",$str_month1,$str_month2)<0);
+{
+?> 
+
+<p><font color="#800080"><big>The , <strong>TO DATE</strong> , must be a bigger or equal
+date to the <strong>FROM DATE</strong></big>.</font>&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="../prob_index.html"></p>
+<? } ?>
+</a>
+<table border="0" height="1" width="579" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="575" align="center" bgcolor="#82A2D2" height="21">&nbsp;
+      
+    </td>
+  </tr>
+</table>
+
+
+<meta http-equiv="pragma" content="no-cache">
+<script language="JavaScript">
+<!--
+
+function buildArray()
+{
+	var a = buildArray.arguments;
+	for (i=0; i<a.length; i++)
+	{  this[i] = a[i]; }
+	this.length = a.length;
+}
+
+var urls1 = new buildArray("","javascript:history.back();","../search2.php", "../index.php");
+
+function go(which, num, win)
+{
+
+	n = which.selectedIndex;
+	if (n != 0)
+	{   var url = eval("urls" + num + "[n]")
+ 		location.href = url;
+  	}
+
+}
+
+// -->
+</script>
+
+
+<!-- InstanceEndEditable --></th>
+      </tr>
+    </table>
+    </th>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<hr align="right" width="80%">
+<p align="center"><strong><small> <a href="mailto:support%25cs.ucy.ac.cy?Subject=Report%20a%20problem%20-%20suggestion">© 2007 </a></small></strong><a href="mailto:support%25cs.ucy.ac.cy?Subject=Report%20a%20problem%20-%20suggestion"><small> The HelpDesk Support Team. </small><img src="../pictures/mail2.gif" alt="Email the Helpdesk Team for comments and suggestions" width="13" height="15" border="0"> </a></p>
+<hr align="right" width="80%">
+</body>
+<!-- InstanceEnd --></html>
+

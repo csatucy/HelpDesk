@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+
+<? 
+ session_start();
+$_SESSION['directory_name'] = $_SERVER['DOCUMENT_ROOT'].'/phpHelpDesk';
+require_once($_SESSION['directory_name'].'/Connections/helpdeskphp.php');
+require ($_SESSION['directory_name'].'/configs/config.inc.php');
+require ($_SESSION['directory_name'].'/Libs/common.lib.php');
+connectDB();
+error();
+
+$what=$_POST["what"];
+
+?>
+
+<title>Help Desk - Get answers to your questions - v. <? echo $VERSION; ?> </title>
+
+<style type="text/css">
+<!--
+
+@import url("../andry_styles.css");
+.style12 {font-weight: bolder}
+.style17 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.style19 {color: #FFFFFF; font-size: 14px; }
+.style20 {font-size: 14px}
+.style21 {color: #FFFFFF}
+.style22 {color: #000000}
+-->
+</style>
+</head>
+
+<body>
+<div id="Layer6" style="position:absolute; left:1px; top:0px; width:975px; height:25px; z-index:6; visibility: visible;" class="titlosGrante" align="center">
+  <div align="center">Helpdesk v.1.4.p
+  </div>
+</div>
+<div id="Layer9" style="position:absolute; left:39px; top:-2px; width:182px; height:88px; z-index:9; background-image: url(../pictures/ucylogo_small6.gif); layer-background-image: url(../pictures/ucylogo_small6.gif); border: 1px none #000000;"></div>
+<div id="Layer1" style="position:absolute; left:-4px; top:39px; width:90%; height:41px; z-index:1; background-color: #CCCC99; layer-background-color: #CCCC99; border: 1px none #000000; visibility: visible;">
+  <div align="center">
+    <p align="center" class="textintence style22"> University of Cyprus - 
+    Department of Computer Science </p>
+  </div>
+</div><div id="Layer1" style="position:absolute; left:-4px; top:88px; width:930px; z-index:3; background-color: #CC6600; layer-background-color: #CC6600; border: 1px none #000000; overflow: visible; height: 3px; visibility: visible;">
+  <div align="center">
+    <p align="center" class="textintence"></p>
+  </div>
+</div>
+<div id="Layer2" style="position:absolute; left:33px; top:5px; width:155px; height:927px; z-index:2; background-color: #DEDEBE; layer-background-color: #DEDEBE; border: 1px none #000000;">
+  <br>
+  <br>
+  <br>
+ 
+ <br>
+ <br>
+  
+  <div align="center" class="style17" style="background-color:#663300">
+    
+    <p><span class="style19">Menu:</span><span class="style20"></span></span><br>
+    </p>
+  </div>
+  <ul>
+    <li>
+      <div align="left">        <a href="../problem_out.php">Enter Request </a> </div>
+      <HR align="left">
+    </li>
+    <li>
+        <div align="left"><a href="../solved_pending.php">Requests &amp; Answers </a>
+        </div>
+      <HR align="left">
+    </li>
+    <li>
+        <div align="left"><a href="../onlysolved.php">Solved Problems
+                      </a>
+        </div>
+      <HR align="left">
+    </li>
+    <li>
+        <div align="left"><a href="../aliases.php">Emai Aliases
+                      </a>
+        </div>
+      <HR align="left">
+    </li>
+    <li>
+      <div align="left"><a href="http://www2.cs.ucy.ac.cy/Computing" target="_blank">Computing Guides
+                    </a>
+      </div>
+      <HR align="left">
+    </li>
+    <li>
+      <div align="left"><a href="../announcements/announcements.php">Announcements
+                    </a>
+      </div>
+      <HR align="left">
+    </li>
+    <li>
+      <a href="../Key.php">Search</a>
+      <HR align="left">
+      <form action="../Search.php" method="post" name="FrontPage_Fom3" id="FrontPage_Fom3" onSubmit="return form1_Validator(this)" >
+        
+        <div align="left">
+          <label class="text"><u>Quick Search:</u></label>
+          <br>
+          <input name="what" type="text" id="what" value="" size="10">
+          <br>
+          <input type="submit" name="Submit" value="Search">
+        </div>
+        </a>
+      </form>
+     
+  </ul>
+	   <?php if ($_SESSION['valid_tech'])
+            {?> 
+	   <div align="center" class="style17" style="background-color:#663300">
+	     <div align="center"><span class="style19"> Administration Menu:</span><br>
+         </div>
+	   </div>
+	   <ul>
+    <li><a href="../admin/techtesting.php">Technichian Control</a></li>
+		        <HR align="left">
+		        <?php } ?>    <?php if ($_SESSION['valid_admin'])
+            {?> 
+ 
+    <li>
+      <a href="../admin/admin.php">Administrator Control</a></li>
+        <HR align="left">
+                
+                <?php } ?>
+  </ul>
+	   <div align="center"><img src="../pictures/Epl_small_round2.gif" width="100" height="95">
+       </div>
+</div>
+ 
+</div>
+<div id="Layer3" style="position:absolute; left:937px; top:9px; width:41px; height:83px; z-index:3; background-color: #000000; layer-background-color: #000000; border: 3px solid #FFFF66 ;"></div>
+<div id="Layer4" style="position:absolute; left:897px; top:18px; width:44px; height:57px; z-index:4; background-color: #FFFFCC; layer-background-color: #FFFFCC; border: 3px solid #FFFF66;"></div>
+<div id="Layer5" style="position:absolute; left:873px; top:17px; width:90px; height:32px; z-index:5; background-color: #663300;  layer-background-color: #663300; border: 3px solid #FFFF66; overflow: visible;"></div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<table width="100%" height="108" border="0">
+  <tr>
+    <th width="160" height="104" nowrap scope="col"><span class="style21">Just to adjust column width</span></th>
+    <th width="1068" scope="col"><table width="96%" height="58" border="0" align="center" id="navBar">
+      <tr>
+        <th height="40" scope="col"><table width="90%" border="0" align="right" cellpadding="0" cellspacing="0">
+            <tr>
+              <?php  if ($_SESSION['valid_user'])
+  {?>
+              <th><span class="style12"><em><strong>You are logged in as: <?php echo($_SESSION['valid_user']);?></strong></em></span></th>
+              <th><div align="left"><small><a href="../logout.php" class="logo">Log Out</a></small> </div></th>
+              <? }
+  else
+  {?>
+              <th><span class="style12"><em><strong>You are viewing this page as a guest &nbsp;<?php echo($valid_user); ?></strong></em></span></th>
+              <th><small><a href="../login_answer.php" class="logo">Login</a></small></th>
+              <?}?>
+            </tr>
+          </table>
+            <script Language="JavaScript"><!--
+function form1_Validator(theForm)
+{ 
+ 
+	 if (theForm.what.value.length <2)
+  {
+    alert("Please enter a value for the \"search term\" field. At least 2 chars.");
+    theForm.what.focus();
+    return (false);
+  }   
+  
+  	 
+
+  return (true);
+ 
+}
+//--></script>
+            <div align="center">
+              <center>
+                <span class="titlos"><span class="style5"><font color="#800000" face="arial"><b><br>
+                </b></font></span></span>
+                <table border="0" width="100%">
+                  <tr>
+                    <td width="541" height="30"><div align="center"><span class="titlosGrante"><span class="titlos"><strong><big><font face="Arial"><big>A</big>dministrators </font><font color="#800000" face="Arial">Control Site</font></big></strong></span></span> </div></td>
+                  </tr>
+                </table>
+              </center>
+            </div>
+            <div align="right"><br>
+            </div>
+            <table width="89%" border="5" align="center" bordercolor="#663300">
+              <tr>
+                <td width="14%" align="center" bgcolor="#FFFFFF"><a href="makeurgent.php">Change state to URGENT </a></td>
+                <td width="14%" align="center" bgcolor="#FFFFFF"><a href="admin3.php">Assign a problem</a></td>
+                <td width="14%" align="center" bgcolor="#FFFFFF"><a href="../admin/admin/edittech.php">Modify Technicians List </a></td>
+                <td width="18%" align="center" bgcolor="#FFFFFF"><span class="style15"><a href="admin/postdel.php">Remove a request</a></span> </td>
+                <td width="16%" align="center" bgcolor="#FFFFFF" class="style15"><a href="../admin/admin/reassign_problem.php">Re-assign a problem </a></td>
+                <td width="16%"  bgcolor="#FFFFFF" class="style15"><small><a href="../Key.php">Search Problem by keyword</a></small></td>
+              </tr>
+            </table>
+            <hr>
+            <!-- TemplateBeginEditable name="EditRegion5" -->
+            <div align="left">
+              <p>EditRegion5<br>
+                  
+            </div>
+          <!-- TemplateEndEditable --></th>
+      </tr>
+    </table>
+    </th>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<hr align="right" width="80%">
+<p align="center"><strong><small> <a href="mailto:support%25cs.ucy.ac.cy?Subject=Report%20a%20problem%20-%20suggestion">© 2007 </a></small></strong><a href="mailto:support%25cs.ucy.ac.cy?Subject=Report%20a%20problem%20-%20suggestion"><small> The HelpDesk Support Team. </small><img src="../pictures/mail2.gif" alt="Email the Helpdesk Team for comments and suggestions" width="13" height="15" border="0"> </a></p>
+<hr align="right" width="80%">
+</body>
+</html>

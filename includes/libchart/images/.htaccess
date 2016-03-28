@@ -1,0 +1,10 @@
+RewriteEngine On
+#RewriteRule ^cache/.*\.(htaccess|htpasswd|ini|...)$ /access_denied.php
+<FilesMatch "\.(php|php4|php5)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+#<FilesMatch "index\.php$">
+#Order Allow,Deny
+#Allow from all
+#</FilesMatch> 

@@ -1,0 +1,101 @@
+/*a:link {
+    font-size:11px;
+	color:#330000;
+	text-decoration: underline;
+	
+	}
+
+a:visited {
+    font-size:11px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	color:#993300;
+	
+} */
+
+/*a:hover {
+	color: #000000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+}
+*/
+#navBar{
+	background-color:#FFFFEC;
+	border: 1px solid #CCCC99;
+	
+}
+
+
+.titlosOld {
+	font-family: "Book Antiqua";
+	font-size: x-large;
+	color:  #aa0000;
+	font-weight: bold;
+	text-decoration: underline;}	
+	
+.titlos {
+	font-family:"Segoe Script";
+	font-size:large;
+	color:  #aa0000;
+	font-weight: bold;
+	}		
+	
+.titlosGrante 	{
+	font-family:"Segoe Print";
+	font-size:40px;
+	color:#550000;
+	font-weight: bold;
+}	
+
+.titlosGranteOld 	{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: xx-large;
+	color:#550000;
+	font-weight: bold;}	
+	
+.text{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#333333;
+	}	
+	
+.textintence{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight:bold;
+		color: #000000;
+}	
+
+.highlight {
+	background-color: #FFCC33;
+}
+
+.fieldbg {
+	background-color: #FFFFCC;
+	color: #003366;
+	text-transform: none;
+	}
+
+.error {
+	color: #FF6600;
+	font-weight:bolder;
+}
+
+.logo {
+	background-color:#99CC00;
+}
+
+
+.back {
+	background-color: #EEEEEE;
+	font-size:11px;
+	font-weight:100;
+	color:#000066;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	}
+
+.note {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:xx-small;
+	color: #777777;
+}
