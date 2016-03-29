@@ -273,8 +273,8 @@ $infoObserver = new Auth_Log_Observer(PEAR_LOG_INFO);
 $debugObserver = new Auth_Log_Observer(PEAR_LOG_DEBUG);
 
 $a = new Auth("LDAP", array(
-  'host' => "ds1.cs.ucy.ac.cy",
-  'basedn' => 'dc=cs,dc=ucy,dc=ac,dc=cy',
+  'host' => "ldap.server.example.com",
+  'basedn' => 'dc=ldap,dc=server,dc=exapmle,dc=com',
   'userdn' => 'ou=People',
   'groupdn' => 'ou=Groups',
   'debug' => 'true',
