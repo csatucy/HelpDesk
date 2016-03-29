@@ -1,6 +1,10 @@
-# Helpdesk Installation 
+# phpHelpdesk Installation 
 (Alpha version. May have errors. Please let us know if you find one)
 
+NOTE: Currently there are many hard coded references/parameters to our local systems 
+      that require many changes in various files to create a functioning system. 
+      We expect these to be cleared and placed in a configuration file as appropriate.
+       
 Assumptions:
 1. a functioning web server preferably a LAMP setup
 2. a LDAP server to authenticate against
@@ -11,4 +15,4 @@ INSTALLATION
 1. get a copy of the HelpDesk from https://github.com/csatucy/HelpDesk
 2. put the code in your web server's tree (default directory: phphelpdesk/)
 3. create a MySQL DB (default - DB name: xxxx, DB username: helpdesk)
-
+4. visit configs/config.inc.php and adjust the configuration variables to your local environment

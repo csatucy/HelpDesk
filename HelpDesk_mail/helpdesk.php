@@ -6,16 +6,16 @@
      //----------------------------------------------------------------------------
      
      //Open HelpDesk mail INBOX folder at mailbox-------------------------------------------------
-     $INBOX_mailbox = imap_open("{mail.cs.ucy.ac.cy:143/novalidate-cert}Inbox","helpdesk", "Yp%7ab6");
+     $INBOX_mailbox = imap_open("{mail.cs.ucy.ac.cy:143/novalidate-cert}Inbox","helpdesk", "1234567890");
      //-------------------------------------------------------------------------------------------
      //Open HelpDesk mail BACKUP folder at mailbox -----------------------------------------------
-     $BACKUP_mailbox = imap_open("{mail.cs.ucy.ac.cy:143/novalidate-cert}Backup","helpdesk","Yp%7ab6");     
+     $BACKUP_mailbox = imap_open("{mail.cs.ucy.ac.cy:143/novalidate-cert}Backup","helpdesk","1234567890");     
      //-------------------------------------------------------------------------------------------
      //Open HelpDesk mail Handled folder at mailbox----------------------------------------------- 
-     $HANDLED_mailbox = imap_open("{mail.cs.ucy.ac.cy:143/novalidate-cert}Handled","helpdesk","Yp%7ab6"); 
+     $HANDLED_mailbox = imap_open("{mail.cs.ucy.ac.cy:143/novalidate-cert}Handled","helpdesk","1234567890"); 
      //-------------------------------------------------------------------------------------------
      //Open HelpDesk mail Spam folder at mailbox-------------------------------------------------- 
-     $SPAM_mailbox = imap_open("{mail.cs.ucy.ac.cy:143/novalidate-cert}Spam","helpdesk","Yp%7ab6"); 
+     $SPAM_mailbox = imap_open("{mail.cs.ucy.ac.cy:143/novalidate-cert}Spam","helpdesk","1234567890"); 
      //-------------------------------------------------------------------------------------------
 	 
      //Connection with db---------------------------

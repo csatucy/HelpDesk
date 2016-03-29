@@ -74,21 +74,21 @@ $what=SanitizedXSS($_POST["what"]);
     <ul class="level-0" id="cssmw" >
       <li><span><a href="index.php"><?php echo _("Home"); ?></a></span></li>
       <li><span><a href="announcements/announcements.php" ><?php echo _("Announcements"); ?> </a></span></li>
-      <li><span><a href="http://its.cs.ucy.ac.cy/guides" target="Help" ><?php echo _("User Guides"); ?> </a></span>
+      <li><span><a href="http://its. /guides" target="Help" ><?php echo _("User Guides"); ?> </a></span>
         <ul class="level-1">
-         <li><span><a href="http://its.cs.ucy.ac.cy/images/stories/uploads/guides/newuserguide.pdf" target="Help"><?php echo _("New user guide"); ?> </a></span></li>
-          <li><span><a href="http://its.cs.ucy.ac.cy/images/stories/uploads/guides/linux_and_freenx.pdf" target="Help"><?php echo _("Unix Labs & FreeNX"); ?> </a></span></li> 
-          <li><span><a href="http://its.cs.ucy.ac.cy/images/stories/uploads/guides/vpn.pdf" target="Help"><?php echo _("VPN"); ?> </a></span></li>
-          <li><span><a href="http://its.cs.ucy.ac.cy/images/stories/uploads/guides/email.pdf" target="Help"><?php echo _("Email"); ?> </a></span></li>
-          <li><span><a href="http://its.cs.ucy.ac.cy/images/stories/uploads/guides/www.pdf" target="Help"><?php echo _("Web services"); ?> </a></span></li>
+         <li><span><a href="http://its. /images/stories/uploads/guides/newuserguide.pdf" target="Help"><?php echo _("New user guide"); ?> </a></span></li>
+          <li><span><a href="http://its. /images/stories/uploads/guides/linux_and_freenx.pdf" target="Help"><?php echo _("Unix Labs & FreeNX"); ?> </a></span></li> 
+          <li><span><a href="http://its. /images/stories/uploads/guides/vpn.pdf" target="Help"><?php echo _("VPN"); ?> </a></span></li>
+          <li><span><a href="http://its. /images/stories/uploads/guides/email.pdf" target="Help"><?php echo _("Email"); ?> </a></span></li>
+          <li><span><a href="http://its. /images/stories/uploads/guides/www.pdf" target="Help"><?php echo _("Web services"); ?> </a></span></li>
         </ul>
       <li><span><a href="aliases.php" ><?php echo _("Email Aliases"); ?> </a></span></li>
-              <li><span><a href="http://its.cs.ucy.ac.cy/" target="Help"><?php echo _("ITS WebSite"); ?> </a></span></li>
+              <li><span><a href="http://its. /" target="Help"><?php echo _("ITS WebSite"); ?> </a></span></li>
             
          
 
-      <li><span><a href="http://its.cs.ucy.ac.cy/faqs" target="Help"><?php echo _("FAQs"); ?> </a></span></li>
-      <li><span><a href="http://its.cs.ucy.ac.cy/contact/about" target="Help"><?php echo _("Contact Us"); ?> </a></span></li>
+      <li><span><a href="http://its. /faqs" target="Help"><?php echo _("FAQs"); ?> </a></span></li>
+      <li><span><a href="http://its. /contact/about" target="Help"><?php echo _("Contact Us"); ?> </a></span></li>
       
 </ul>
     <script type="text/javascript">if(window.attachEvent) { window.attachEvent("onload", function() { cssmw.intializeMenu('cssmw'); }); } else if(window.addEventListener) { window.addEventListener("load", function() { cssmw.intializeMenu('cssmw'); }, true); }</script> 
@@ -235,7 +235,7 @@ function form1_Validator(theForm)
     
     
     <div id="content-right"><!-- InstanceBeginEditable name="EditRegion5" --><p align="center" class="titlosGrante"><?php echo _("About Helpdesk "); ?>    </p>
-      <p align="center" class="text"><strong><?php echo _("Helpdesk "); echo _(" is the first point of contact when you have a computer-related problem.It is our sincere hope that you will find exactly what you are looking for among these Online Helpdesk pages. Through this site you can");?> <font color="#800000"> <a href="login.php"><?php echo _("Report your problem"); ?></a></font> <?php echo _("and get a prompt answer or  search  on solved unsolved problems on-line, find out the most useful"); ?> <font color="#800000"> <a href="aliases.php"><?php echo _("Email aliases");?></a></font><a href="aliases.php">,</a> <font color="#800000"> <a href="http://its.cs.ucy.ac.cy"><?php echo _("Online help");?></a></font><?php echo _(" and many many others. Any time someone replies to your request you will receive a notification at your email. If you are unable to find your solution here, please call the Helpdesk at 22892727 or 22892728. For any suggestions please contact the Helpdesk Team.");?></strong></p>
+      <p align="center" class="text"><strong><?php echo _("Helpdesk "); echo _(" is the first point of contact when you have a computer-related problem.It is our sincere hope that you will find exactly what you are looking for among these Online Helpdesk pages. Through this site you can");?> <font color="#800000"> <a href="login.php"><?php echo _("Report your problem"); ?></a></font> <?php echo _("and get a prompt answer or  search  on solved unsolved problems on-line, find out the most useful"); ?> <font color="#800000"> <a href="aliases.php"><?php echo _("Email aliases");?></a></font><a href="aliases.php">,</a> <font color="#800000"> <a href="http://its. "><?php echo _("Online help");?></a></font><?php echo _(" and many many others. Any time someone replies to your request you will receive a notification at your email. If you are unable to find your solution here, please call the Helpdesk at 22892727 or 22892728. For any suggestions please contact the Helpdesk Team.");?></strong></p>
     
   
         <p align="left" class="note"><font face="Arial, Helvetica, sans-serif"><a href="newfeaturess.php" border="0"><img src="pictures/untitled.jpg" width="47" height="26" border="0" /></a></font><a href="newfeaturess.php"><?php echo _("Click Here to see HelpDesk new features.")?></a><br />
@@ -254,7 +254,7 @@ Tested on Browser:<br />
     <br class="clearFloat" />
   </div>
   <div id="footer">
-    <p><a href="index.php"><?php echo _("Home"); ?></a> | <a href="announcements/announcements.php" ><?php echo _("Announcements"); ?> </a> | <a href="http://its.cs.ucy.ac.cy/guides" target="Help" ><?php echo _("User Guides"); ?> </a> |<a href="aliases.php" ><?php echo _("Email Aliases"); ?> </a> | <a href="http://its.cs.ucy.ac.cy/" target="Help"><?php echo _("ITS WebSite"); ?> </a>| <a href="http://its.cs.ucy.ac.cy/faqs" target="Help"><?php echo _("FAQs"); ?> </a> | <a href="http://its.cs.ucy.ac.cy/contact/about" target="Help"><?php echo _("Contact Us"); ?> </a> | <a href="about.php" ><?php echo _("About"); ?> </a></p>
+    <p><a href="index.php"><?php echo _("Home"); ?></a> | <a href="announcements/announcements.php" ><?php echo _("Announcements"); ?> </a> | <a href="http://its. /guides" target="Help" ><?php echo _("User Guides"); ?> </a> |<a href="aliases.php" ><?php echo _("Email Aliases"); ?> </a> | <a href="http://its. /" target="Help"><?php echo _("ITS WebSite"); ?> </a>| <a href="http://its. /faqs" target="Help"><?php echo _("FAQs"); ?> </a> | <a href="http://its. /contact/about" target="Help"><?php echo _("Contact Us"); ?> </a> | <a href="about.php" ><?php echo _("About"); ?> </a></p>
     <p>This site is copyright © 2013 The HelpDesk support Team<img src="http://www.justdreamweaver.com/templates/link/spacer.gif" width="1" /></p>
   </div>
   <!--The following code must be left in place and unaltered for free usage of this theme. If you wish to remove the links, contact us at http://www.justdreamweaver.com and get template pricing for a link-free template.-->

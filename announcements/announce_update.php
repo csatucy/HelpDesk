@@ -89,14 +89,14 @@ $subj="New Helpdesk Announcement";
 $mySQL = "INSERT INTO announce (subject,author,sent_to,authoremail,indate,body,state) VALUES ('".$subject."','".$authorname."','".$whom."','".$authoremail."', '".$today."', '".nl2br($body_copia)."', \"active\" )";
 
 
-//$headers="From: support@cs.ucy.ac.cy\n"; 
+//$headers="From: support@ \n"; 
 //$headers.="Content-type: text/html; charset=utf-8\n";
 
-$headers = 'From: support@cs.ucy.ac.cy'. "\r\n" .
-           'Reply-To: support@cs.ucy.ac.cy'  . "\r\n" .
-		   'Return-Path: support@cs.ucy.ac.cy'  . "\r\n" .
+$headers = 'From: support@ '. "\r\n" .
+           'Reply-To: support@ '  . "\r\n" .
+		   'Return-Path: support@ '  . "\r\n" .
 		   'Content-Type: text/html; charset=UTF-8'. "\r\n" .
-		   'X-CSatUCY-From: support@cs.ucy.ac.cy' . "\r\n" .
+		   'X-CSatUCY-From: support@ ' . "\r\n" .
            'X-Mailer: PHP/' . phpversion();
 
 
@@ -105,15 +105,15 @@ error();
 
 if (!empty($Csall)){
 //echo "<br>will email csall=".$Csall."<br>";
-//mail($Csall, $subj.$subject, $trail2.$body.$trail, "From: support@cs.ucy.ac.cy");
-mail($Csall, $subj, $trail2.$body.$trail, $headers, "-fsupport@cs.ucy.ac.cy");
+//mail($Csall, $subj.$subject, $trail2.$body.$trail, "From: support@ ");
+mail($Csall, $subj, $trail2.$body.$trail, $headers, "-fsupport@ ");
 }
 	if (!empty($maillist)){
 		foreach ($maillist as $key => $value) {
 	//	$val=$val.", ".$value;} ;
 		$val=$value;
-			//mail($val, $subj.$subject, $trail2.$body.$trail, "From: support@cs.ucy.ac.cy");
-			mail($val, $subj, $trail2.$body.$trail, $headers, "-fsupport@cs.ucy.ac.cy");
+			//mail($val, $subj.$subject, $trail2.$body.$trail, "From: support@ ");
+			mail($val, $subj, $trail2.$body.$trail, $headers, "-fsupport@ ");
 
 		}
 	}
@@ -127,13 +127,13 @@ if ( !error() ) {
 //andrim if (!empty($Csall)){
 
 //echo "<br>will email csall=".$Csall."<br>";
-//mail($Csall, $subj.$subject, $trail2.$body.$trail, "From: support@cs.ucy.ac.cy");
+//mail($Csall, $subj.$subject, $trail2.$body.$trail, "From: support@ ");
 
 //andrim mail($Csall, $subj.$subject, $trail2.$body.$trail, $headers);
 
 
 
-/*mail("andrim@cs.ucy.ac.cy", $subj.$subject, $trail2.$body.$trail, $headers);*/
+/*mail("andrim@ ", $subj.$subject, $trail2.$body.$trail, $headers);*/
 
 
 
@@ -142,7 +142,7 @@ if ( !error() ) {
 //andrim		foreach ($maillist as $key => $value) {
 	//	$val=$val.", ".$value;} ;
 //andrim		$val=$value;
-			//mail($val, $subj.$subject, $trail2.$body.$trail, "From: support@cs.ucy.ac.cy");
+			//mail($val, $subj.$subject, $trail2.$body.$trail, "From: support@ ");
 //andrim			mail($val, $subj.$subject, $trail2.$body.$trail, $headers);
 
 		//andrim}

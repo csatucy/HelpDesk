@@ -74,21 +74,21 @@ $what=SanitizedXSS($_POST["what"]);
     <ul class="level-0" id="cssmw" >
       <li><span><a href="../index.php"><?php echo _("Home"); ?></a></span></li>
       <li><span><a href="announcements.php" ><?php echo _("Announcements"); ?> </a></span></li>
-      <li><span><a href="http://its.cs.ucy.ac.cy/guides" target="Help" ><?php echo _("User Guides"); ?> </a></span>
+      <li><span><a href="http://its. /guides" target="Help" ><?php echo _("User Guides"); ?> </a></span>
         <ul class="level-1">
-         <li><span><a href="http://its.cs.ucy.ac.cy/images/stories/uploads/guides/newuserguide.pdf" target="Help"><?php echo _("New user guide"); ?> </a></span></li>
-          <li><span><a href="http://its.cs.ucy.ac.cy/images/stories/uploads/guides/linux_and_freenx.pdf" target="Help"><?php echo _("Unix Labs & FreeNX"); ?> </a></span></li> 
-          <li><span><a href="http://its.cs.ucy.ac.cy/images/stories/uploads/guides/vpn.pdf" target="Help"><?php echo _("VPN"); ?> </a></span></li>
-          <li><span><a href="http://its.cs.ucy.ac.cy/images/stories/uploads/guides/email.pdf" target="Help"><?php echo _("Email"); ?> </a></span></li>
-          <li><span><a href="http://its.cs.ucy.ac.cy/images/stories/uploads/guides/www.pdf" target="Help"><?php echo _("Web services"); ?> </a></span></li>
+         <li><span><a href="http://its. /images/stories/uploads/guides/newuserguide.pdf" target="Help"><?php echo _("New user guide"); ?> </a></span></li>
+          <li><span><a href="http://its. /images/stories/uploads/guides/linux_and_freenx.pdf" target="Help"><?php echo _("Unix Labs & FreeNX"); ?> </a></span></li> 
+          <li><span><a href="http://its. /images/stories/uploads/guides/vpn.pdf" target="Help"><?php echo _("VPN"); ?> </a></span></li>
+          <li><span><a href="http://its. /images/stories/uploads/guides/email.pdf" target="Help"><?php echo _("Email"); ?> </a></span></li>
+          <li><span><a href="http://its. /images/stories/uploads/guides/www.pdf" target="Help"><?php echo _("Web services"); ?> </a></span></li>
         </ul>
       <li><span><a href="../aliases.php" ><?php echo _("Email Aliases"); ?> </a></span></li>
-              <li><span><a href="http://its.cs.ucy.ac.cy/" target="Help"><?php echo _("ITS WebSite"); ?> </a></span></li>
+              <li><span><a href="http://its. /" target="Help"><?php echo _("ITS WebSite"); ?> </a></span></li>
             
          
 
-      <li><span><a href="http://its.cs.ucy.ac.cy/faqs" target="Help"><?php echo _("FAQs"); ?> </a></span></li>
-      <li><span><a href="http://its.cs.ucy.ac.cy/contact/about" target="Help"><?php echo _("Contact Us"); ?> </a></span></li>
+      <li><span><a href="http://its. /faqs" target="Help"><?php echo _("FAQs"); ?> </a></span></li>
+      <li><span><a href="http://its. /contact/about" target="Help"><?php echo _("Contact Us"); ?> </a></span></li>
       
 </ul>
     <script type="text/javascript">if(window.attachEvent) { window.attachEvent("onload", function() { cssmw.intializeMenu('cssmw'); }); } else if(window.addEventListener) { window.addEventListener("load", function() { cssmw.intializeMenu('cssmw'); }, true); }</script> 
@@ -287,7 +287,7 @@ $maillist=array();
 				   <?php if (strlen($theemail)==0)
   {
 
-    $putmail=$_SESSION['valid_tech']."@cs.ucy.ac.cy";
+    $putmail=$_SESSION['valid_tech']."@ ";
   }
     else
   {
@@ -299,7 +299,7 @@ $maillist=array();
 				   
 				   <input type="text" name="authoremail" size="50" maxlength="50" readonly="readonly"" value="<?php echo $putmail; ?>" />
 				   <font face="Arial" color="red" size="4">*</font><br />
-			      <span class="note"><?php echo _("Use the style 'username at cs.ucy.ac.cy'"); ?> </span></div></td>
+			      <span class="note"><?php echo _("Use the style 'username at  '"); ?> </span></div></td>
 		  </tr>
 		   <tr class="back">
 		  			  <td align="left" height="21" nowrap="nowrap"><?php echo _("Subject"); ?>:	  			  </td>
@@ -320,7 +320,7 @@ $maillist=array();
 				       <td colspan="3" align="right" nowrap="nowrap">
 				         <font color="red" face="arial" size="2"><?php echo _("All department members"); ?></font>
 				         <font size="2">
-				           <input name="Csall" type="checkbox"  onclick="Unchecktherest();" value="csall@cs.ucy.ac.cy" checked="checked" />			     		        
+				           <input name="Csall" type="checkbox"  onclick="Unchecktherest();" value="csall@ " checked="checked" />			     		        
 			              </font></td>
 		     	       </tr>
 				     
@@ -328,46 +328,46 @@ $maillist=array();
 				       <td align="right" nowrap="nowrap">
 				         <font size="2">				       <font color="red" face="arial"><?php echo _("Faculty members");?></font></font>
 				         <font size="2">
-				           <input name="maillist[]" type="checkbox" onclick="UnchecktheAll();" value="csfaculty@cs.ucy.ac.cy" />
+				           <input name="maillist[]" type="checkbox" onclick="UnchecktheAll();" value="csfaculty@ " />
 			              </font></td>
 						    
 			     	 <td align="right" nowrap="nowrap"><font color="red" face="arial" size="2" ><?php echo _("Research staff"); ?> </font>
 			     	   <font size="2">
-			     	     <input type="checkbox" name="maillist[]"   value="csresearch@cs.ucy.ac.cy" onclick="UnchecktheAll();" />
+			     	     <input type="checkbox" name="maillist[]"   value="csresearch@ " onclick="UnchecktheAll();" />
 			     	     </font></td>
 					       
 			     	 <td align="right" nowrap="nowrap"><font color="red" face="arial" size="2" ><?php echo _("Special scientists"); ?></font>
 			     	   <font size="2">
-			     	     <input type="checkbox" name="maillist[]"  value="cstspecial@cs.ucy.ac.cy" onclick="UnchecktheAll();" />			     	   	       </font></td>
+			     	     <input type="checkbox" name="maillist[]"  value="cstspecial@ " onclick="UnchecktheAll();" />			     	   	       </font></td>
 			     	    </tr>
 				     
 				     <tr>
 				       <td align="right" nowrap="nowrap">
 				         <font color="#FF0000" size="2" face="Arial"><?php echo _("Graduate Students"); ?>
-				           <input name="maillist[]" type="checkbox" id="C7" value="cspg@cs.ucy.ac.cy"  onclick="UnchecktheAll();" />
+				           <input name="maillist[]" type="checkbox" id="C7" value="cspg@ "  onclick="UnchecktheAll();" />
 			              </font>	     	          </td>
 			     	     <td align="right" nowrap="nowrap">
 			     	       <font color="#FF0000" size="2" face="Arial"><?php echo _("Undergrad. students"); ?>			     	    
-		     	            <input name="maillist[]" type="checkbox" id="C8" value="undergrad@cs.ucy.ac.cy"  onclick="UnchecktheAll();" />
+		     	            <input name="maillist[]" type="checkbox" id="C8" value="undergrad@ "  onclick="UnchecktheAll();" />
 	     	              </font>	     	          </td>
 			     	     <td align="right" nowrap="nowrap">
 			     	       <font color="red" face="arial" size="2" ><?php echo _("Administr. staff"); ?> </font>
 			     	       <font size="2">
-		     	            <input type="checkbox" name="maillist[]" value="csstaff@cs.ucy.ac.cy"  onclick="UnchecktheAll();" />
+		     	            <input type="checkbox" name="maillist[]" value="csstaff@ "  onclick="UnchecktheAll();" />
 	     	              </font></td>
 			     	</tr><tr>
 			     	  <td align="right" nowrap="nowrap">
 			     	    <font color="#FF0000" size="2" face="Arial"><?php echo _("Master Students"); ?>
-			     	      <input name="maillist[]" type="checkbox" id="C7" value="csmsc@cs.ucy.ac.cy"  onclick="UnchecktheAll();" />
+			     	      <input name="maillist[]" type="checkbox" id="C7" value="csmsc@ "  onclick="UnchecktheAll();" />
 			     	      </font>	     	          </td>
 			     	     <td align="right" nowrap="nowrap">
 			     	       <font color="#FF0000" size="2" face="Arial"><?php echo _("PhD students"); ?>			     	    
-		     	            <input name="maillist[]" type="checkbox" id="C8" value="csphd@cs.ucy.ac.cy"  onclick="UnchecktheAll();" />
+		     	            <input name="maillist[]" type="checkbox" id="C8" value="csphd@ "  onclick="UnchecktheAll();" />
 	     	              </font>	     	          </td>
 			     	     <td align="right" nowrap="nowrap">
 			     	       <font color="red" face="arial" size="2"> <?php echo _("Support"); ?>  </font>
 			     	       <font size="2">
-		     	            <input type="checkbox" name="maillist[]" value="cssupport@cs.ucy.ac.cy" onclick="UnchecktheAll();" />
+		     	            <input type="checkbox" name="maillist[]" value="cssupport@ " onclick="UnchecktheAll();" />
 	     	              </font></td>
     
 			     	</tr>
@@ -635,7 +635,7 @@ function CheckAll()
     <br class="clearFloat" />
   </div>
   <div id="footer">
-    <p><a href="../index.php"><?php echo _("Home"); ?></a> | <a href="announcements.php" ><?php echo _("Announcements"); ?> </a> | <a href="http://its.cs.ucy.ac.cy/guides" target="Help" ><?php echo _("User Guides"); ?> </a> |<a href="../aliases.php" ><?php echo _("Email Aliases"); ?> </a> | <a href="http://its.cs.ucy.ac.cy/" target="Help"><?php echo _("ITS WebSite"); ?> </a>| <a href="http://its.cs.ucy.ac.cy/faqs" target="Help"><?php echo _("FAQs"); ?> </a> | <a href="http://its.cs.ucy.ac.cy/contact/about" target="Help"><?php echo _("Contact Us"); ?> </a> | <a href="../about.php" ><?php echo _("About"); ?> </a></p>
+    <p><a href="../index.php"><?php echo _("Home"); ?></a> | <a href="announcements.php" ><?php echo _("Announcements"); ?> </a> | <a href="http://its. /guides" target="Help" ><?php echo _("User Guides"); ?> </a> |<a href="../aliases.php" ><?php echo _("Email Aliases"); ?> </a> | <a href="http://its. /" target="Help"><?php echo _("ITS WebSite"); ?> </a>| <a href="http://its. /faqs" target="Help"><?php echo _("FAQs"); ?> </a> | <a href="http://its. /contact/about" target="Help"><?php echo _("Contact Us"); ?> </a> | <a href="../about.php" ><?php echo _("About"); ?> </a></p>
     <p>This site is copyright © 2013 The HelpDesk support Team<img src="http://www.justdreamweaver.com/templates/link/spacer.gif" width="1" /></p>
   </div>
   <!--The following code must be left in place and unaltered for free usage of this theme. If you wish to remove the links, contact us at http://www.justdreamweaver.com and get template pricing for a link-free template.-->

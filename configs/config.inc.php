@@ -20,7 +20,7 @@
 # VERSION: The version of SI2. Versions are named like 
 # x.yzz where x is major release y is minor release and 
 # zz is optional for bug-fixing releases.
-$VERSION = "2.1";
+$VERSION = "2.1p";
 $AUTH_HOST="mail";
 $SERVER_TYPE="imap";
 # Section 1: Database Configuration
@@ -40,7 +40,7 @@ $db_user = "helpadmin";
 # cfg_dbpasswd: The dbuser's password.
 # Syntax: $cfg_dbpasswd = "<password>";
 # Default: $cfg_dbpasswd = "";
-$db_passwd = "PmBDRE3pajcjVPP4"; 
+$db_passwd = "1234567890"; 
 # cfg_dbdb: The database to use
 # Syntax: $db_db = "<db>";
 # Default: $dbdb = "si2";
