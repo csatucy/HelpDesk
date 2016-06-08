@@ -7,8 +7,8 @@ Fully developed mature application.
 # Prerequisites
 LAMP server. Tested with PHP 5.3 and MySQL 5.5.37
 
-Some trivial changes (changing references to our local environment) will be required since this 
-was custom made for our department. These will eventually be removed and place in proper configuation
-parameters. Help us identify these changes by submitting bugs/issues.
+Some trivial changes (references to our local environment) will be required since this was 
+custom made for our department. These references will eventually be removed and paremeterized
+in proper configuation files. Help us identify these changes by submitting bugs/issues.
 
  
